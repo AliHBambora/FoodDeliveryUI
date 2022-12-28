@@ -1,0 +1,27 @@
+.ButtonStyle{
+    padding:5px 10px 5px 10px;
+    background: #ffffff;
+    color:#FC5000;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border:none;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.ButtonStyle:focus{
+    background-color: #FC5000;
+    color:#ffffff;
+    transform: scale(1.2);
+    transition: all 0.2s;
+    border:1px solid #ffffff;
+}
+
+.ButtonStyle:hover{
+    background-color: #FC5000;
+    color:#ffffff;
+    transform: scale(1.2);
+    transition: all 0.4s;
+    border:1px solid #ffffff;
+}
