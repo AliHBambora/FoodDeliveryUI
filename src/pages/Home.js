@@ -1,5 +1,4 @@
 import React from "react";
-import SingleButtonGroup from "../Components/molecules/SingleButtonGroup";
 import { Box } from "@mui/material";
 import LeftContainer from "../Components/templates/LeftContainer";
 import RightContainer from "../Components/templates/RightContainer";

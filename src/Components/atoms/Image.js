@@ -1,9 +1,16 @@
-import React from 'react'
+import React from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Image = (props) => {
   return (
-    <img src={props.source} style={{height:props.height,width:props.width,objectFit:props.ObjectFit,borderRadius:props.borderRadius}} />
-  )
-}
+    <LazyLoadImage
+      src={props.source}
+      width={props.width}
+      height={props.height}
+      style={{ objectFit: props.ObjectFit, borderRadius: props.borderRadius }}
+      effect="blur"
+    />
+  );
+};
 
-export default Image
+export default Image;
