@@ -4,6 +4,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 const Image = (props) => {
   return (
     <LazyLoadImage
+      key={props.key}
       src={props.source}
       width={props.width}
       height={props.height}

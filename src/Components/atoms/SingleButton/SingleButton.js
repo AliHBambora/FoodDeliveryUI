@@ -7,6 +7,7 @@ const SingleButton = (props) => {
   return (
     <>
       <button
+        key={props.key}
         className={style.ButtonStyle}
         style={
           menuType===props.title
