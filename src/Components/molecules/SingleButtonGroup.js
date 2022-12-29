@@ -11,7 +11,7 @@ const SingleButtonGroup = () => {
       style={{
         display: "flex",
         alignItem: "center",
-        justifyContent: "space-evenly",
+        justifyContent: "space-between",
       }}
     >
       <SingleButton icon={CoffeeIcon} title="Signature"/>

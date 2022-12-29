@@ -20,10 +20,14 @@ const MUIStyledButton = ({href,icon,active,title}) => {
           textTransform: "none",
           width: "100%",
           "& .MuiButton-startIcon": {
-            color: active ? "secondary.main" : "neutral.400",
+            color: active ? "#FFFFFF" : "#FC5000",
           },
           "&:hover": {
-            backgroundColor: "rgba(255,255,255, 0.08)",
+            backgroundColor: "#FC5000",
+            color:"#FFFFFF",
+            "& .MuiButton-startIcon":{
+                color:"#FFFFFF"
+            }
           },
         }}
       >
