@@ -1,6 +1,6 @@
 import { Grid } from "@mui/material";
 import React, { useContext } from "react";
-import DishCard from "../molecules/DishCard";
+import DishCard from "../molecules/DishCard/DishCard";
 import { dishes } from "../../constants/menuDishes";
 import { MenuTypeContext } from "../../Context/MenuTypeContext";
 
@@ -16,6 +16,7 @@ const DishesGridView = () => {
       {dishes[menuType].map((item) => (
         <Grid item xs={4} key={item.id}>
           <DishCard
+            key={item.id}
             imageSource={item.imageSource}
             dishTitle={item.dishTitle}
             dishDescription={item.dishDescription}

@@ -1,0 +1,30 @@
+.Container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+.ImageContainer {
+  border-radius: 10px;
+  flex-grow: 1;
+}
+
+.Title {
+  margin-top: 10px;
+  flex: 0.2;
+}
+
+.Subtitle {
+  margin-top: 5px;
+  flex: 0.1;
+}
+
+.PriceContainer {
+  display: flex;
+  margin-top: 5px;
+  align-items: center;
+  flex: 0.2;
+}
