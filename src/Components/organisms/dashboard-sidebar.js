@@ -1,23 +1,18 @@
 import { useEffect } from "react";
 import PropTypes from "prop-types";
-import {
-  Box,
-  Divider,
-  Drawer,
-  useMediaQuery,
-} from "@mui/material";
+import { Box, Divider, Drawer, useMediaQuery } from "@mui/material";
 
 import { Lock as LockIcon } from "../../icons/lock";
-import {Cog as CogIcon} from "../../icons/cog";
+import { Cog as CogIcon } from "../../icons/cog";
 import { ShoppingBag as ShoppingBagIcon } from "../../icons/shopping-bag";
 import { UserAdd as UserAddIcon } from "../../icons/user-add";
 import { NavItem } from "../molecules/nav-item";
 import Logo from "../molecules/Logo";
-import LogoutIcon from '@mui/icons-material/Logout';
-import HomeIcon from '@mui/icons-material/Home';
-import GridViewIcon from '@mui/icons-material/GridView';
-import RestaurantIcon from '@mui/icons-material/Restaurant';
-import FavoriteIcon from '@mui/icons-material/Favorite';
+import LogoutIcon from "@mui/icons-material/Logout";
+import HomeIcon from "@mui/icons-material/Home";
+import GridViewIcon from "@mui/icons-material/GridView";
+import RestaurantIcon from "@mui/icons-material/Restaurant";
+import FavoriteIcon from "@mui/icons-material/Favorite";
 
 const items = [
   {
@@ -35,7 +30,7 @@ const items = [
     icon: <RestaurantIcon fontSize="small" />,
     title: "Menu",
   },
- 
+
   {
     href: "/shoppingBag",
     icon: <ShoppingBagIcon fontSize="small" />,
@@ -55,7 +50,7 @@ const items = [
     href: "/register",
     icon: <UserAddIcon fontSize="small" />,
     title: "Register",
-  }
+  },
 ];
 
 export const DashboardSidebar = (props) => {
