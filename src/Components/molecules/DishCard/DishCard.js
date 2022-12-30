@@ -16,8 +16,8 @@ const DishCard = ({
       <div className={style.ImageContainer}>
         <Image
           source={imageSource}
-          height={200}
-          width={200}
+          height="100%"
+          width="100%"
           ObjectFit="contain"
           borderRadius={10}
           key={key}

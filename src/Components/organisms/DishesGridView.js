@@ -25,28 +25,6 @@ const DishesGridView = () => {
           />
         </Grid>
       ))}
-
-      {/* <Grid item xs={4}>
-        <DishCard
-          imageSource={MeatBallPizza}
-          dishTitle="MeatBallPizza"
-          dishDescription={"MeatBallPizza with thin crust"}
-        />
-      </Grid>
-      <Grid item xs={4}>
-        <DishCard
-          imageSource={MeatCrustPizza}
-          dishTitle="MeatCrustPizza"
-          dishDescription={"MeatCrustPizza with thin crust"}
-        />
-      </Grid>
-      <Grid item xs={4}>
-        <DishCard
-          imageSource={MushroomAndCheesePizza}
-          dishTitle="MushroomAndCheesePizza"
-          dishDescription={"MushroomAndCheesePizza with thin crust"}
-        />
-      </Grid> */}
     </Grid>
   );
 };

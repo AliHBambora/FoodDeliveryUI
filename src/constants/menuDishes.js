@@ -21,7 +21,7 @@ import CreamyPasta from "../Assets/Images/CreamyPasta.jpg";
 import RedSaucePasta from "../Assets/Images/RedSaucePasta.jpg";
 import SpicyItalianPasta from "../Assets/Images/SpicyItalianPasta.jpg";
 import WhiteCheesePasta from "../Assets/Images/WhiteCheesePasta.jpg";
-import WhiteSaucePasta from "../Assets/Images/WhiteCheesePasta.jpg";
+import WhiteSaucePasta from "../Assets/Images/WhiteSaucePasta.jpg";
 
 const uuidv4 = () => {
   return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, function (c) {

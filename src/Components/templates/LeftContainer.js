@@ -5,7 +5,7 @@ import DishesGridView from '../organisms/DishesGridView'
 
 const LeftContainer = () => {
   return (
-    <Box sx={{flex:0.6,padding:"2%",backgroundColor:"#F2EEEC"}}>
+    <Box sx={{flex:"0.6",padding:"2%",backgroundColor:"#F2EEEC",overflowY:"scroll",height:"80vh"}}>
        <SingleButtonGroup />
        <DishesGridView /> 
     </Box>
