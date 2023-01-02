@@ -27,7 +27,7 @@ const DishCard = ({
         <Text variant="h6" text={dishTitle} color="black" />
       </div>
       <div className={style.Subtitle}>
-        <Text variant="subtitle2" text={dishDescription} color="lightgrey" />
+        <Text variant="subtitle2" text={dishDescription} color="#454545" />
       </div>
       <div className={style.PriceContainer}>
         <Text variant="h6" text={dishPrice} color="#FC5000" />
