@@ -9,6 +9,7 @@ const CurrentOrderItems = () => {
   return (
     <div className={style.MainContainer}>
       <CurrentOrderTop />
+
       {currentOrderItems.map((item) => (
         <CurrentOrderItemCard
           ImageSource={item.ImageSource}
@@ -17,6 +18,7 @@ const CurrentOrderItems = () => {
           ItemPrice={item.ItemPrice}
         />
       ))}
+
       {/* <CurrentOrderItemCard
         ImageSource={ChocolateChipsCake}
         ItemName="Chocolate Chips Cake"
@@ -36,7 +38,6 @@ const CurrentOrderItems = () => {
         ItemPrice="20$"
       /> */}
     </div>
-    // 3 current order cards
   );
 };
 

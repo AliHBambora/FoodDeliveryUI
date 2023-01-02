@@ -3,7 +3,7 @@ import React from 'react'
 
 const Text = (props) => {
   return (
-    <Typography variant={props.variant} sx={{color:props.color}}>
+    <Typography variant={props.variant} sx={{color:props.color,fontWeight:props.fontWeight}}>
         {props.text}
     </Typography>
   )

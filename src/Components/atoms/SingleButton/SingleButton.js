@@ -10,7 +10,7 @@ const SingleButton = (props) => {
         key={props.key}
         className={style.ButtonStyle}
         style={
-          menuType===props.title
+          menuType === props.title
             ? {
                 backgroundColor: "#FC5000",
                 color: "#ffffff",

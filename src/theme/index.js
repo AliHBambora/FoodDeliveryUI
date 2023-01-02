@@ -300,4 +300,5 @@ export const theme = createTheme({
       lineHeight: 1.375
     }
   }
+  
 });

@@ -3,3 +3,22 @@ body {
   padding:0;
   overflow: hidden;
 }
+
+::-webkit-scrollbar {
+  width: 8px; 
+  height: 8px;
+}
+    
+::-webkit-scrollbar-track {
+  background: gainsboro;
+  border-radius: 5px;
+}
+    
+::-webkit-scrollbar-thumb {
+  background: #fc5000;
+  border-radius: 5px;
+}
+    
+::-webkit-scrollbar-thumb:hover {
+  background: #f75a00;
+}
