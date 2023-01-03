@@ -10,6 +10,9 @@
 
 3). Run the project using 'npm start'.
 
+## Project UI
+
+![Alt text](/src/Assets/Images/ScreenShotUI.JPG)
 
 # Atomic Design Pattern
 The project follows atomic design pattern which imrpoves the readability, scalability and flexibility of your application code. The Atomic design pattern has proved to be remarkably suited for the componentised nature of React.
