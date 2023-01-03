@@ -16,27 +16,9 @@ const CurrentOrderItems = () => {
           ItemName={item.ItemName}
           ItemQuantity={item.ItemQuantity}
           ItemPrice={item.ItemPrice}
+          key={item.id}
         />
       ))}
-
-      {/* <CurrentOrderItemCard
-        ImageSource={ChocolateChipsCake}
-        ItemName="Chocolate Chips Cake"
-        ItemQuantity={2}
-        ItemPrice="20$"
-      />
-      <CurrentOrderItemCard
-        ImageSource={ChocolateChipsCake}
-        ItemName="Chocolate Chips Cake"
-        ItemQuantity={2}
-        ItemPrice="20$"
-      />
-      <CurrentOrderItemCard
-        ImageSource={ChocolateChipsCake}
-        ItemName="Chocolate Chips Cake"
-        ItemQuantity={2}
-        ItemPrice="20$"
-      /> */}
     </div>
   );
 };

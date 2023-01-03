@@ -4,7 +4,7 @@ import Text from "../../atoms/Text";
 import style from "./DishCard.module.css";
 
 const DishCard = ({
-  key,
+  id,
   imageSource,
   dishTitle,
   dishDescription,
@@ -20,7 +20,9 @@ const DishCard = ({
           width="100%"
           ObjectFit="contain"
           borderRadius={10}
-          key={key}
+          key={id}
+          LoaderWidth={200}
+          LoaderHeight={200}
         />
       </div>
       <div className={style.Title}>
@@ -31,7 +33,7 @@ const DishCard = ({
       </div>
       <div className={style.PriceContainer}>
         <Text variant="h6" text={dishPrice} color="#FC5000" />
-        <Text variant="body 1" text={dishQuantity} color="lightgrey" />
+        <Text variant="body 1" text={dishQuantity} color="#454545" />
       </div>
     </div>
   );

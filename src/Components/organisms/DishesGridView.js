@@ -16,7 +16,7 @@ const DishesGridView = () => {
       {dishes[menuType].map((item) => (
         <Grid item xs={4} key={item.id}>
           <DishCard
-            key={item.id}
+            id={item.id}
             imageSource={item.imageSource}
             dishTitle={item.dishTitle}
             dishDescription={item.dishDescription}

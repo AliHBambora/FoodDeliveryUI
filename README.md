@@ -1,74 +1,45 @@
-<<<<<<< HEAD
 # FoodDeliveryUI
-=======
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Getting Started
 
-## Available Scripts
+### Steps to run the project
 
-In the project directory, you can run:
+1.) Clone the repository using command 'git clone https://github.com/AliHBambora/FoodDeliveryUI.git' or directly download from the clone option on github.
 
-### `npm start`
+2.) Once the clone is done , run 'npm install' in the project directory to install all the required dependencies of the project.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+3). Run the project using 'npm start'.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+# Atomic Design Pattern
+The project follows atomic design pattern which imrpoves the readability, scalability and flexibility of your application code. The Atomic design pattern has proved to be remarkably suited for the componentised nature of React.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Atomic Development
+The five distinct levels of atomic design — atoms > molecules > organisms > templates > pages — map incredibly well to React’s component-based architecture.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![alt text](https://miro.medium.com/max/640/1*PcQ-m317YX6ct9ccBi6H1Q.webp)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Atoms:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Basic building blocks of matter, such as a button, input or a form label. They’re not useful on their own.
 
-### `npm run eject`
+### Molecules:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Grouping atoms together, such as combining a button, input and form label to build functionality.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Organisms:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Combining molecules together to form organisms that make up a distinct section of an interface (i.e. navigation bar)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Templates:
 
-## Learn More
+Consisting mostly of groups of organisms to form a page — where clients can see a final design in place.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Pages:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+An ecosystem that views different template renders. We can create multiple ecosystems into a single environment — the application.
 
-### Code Splitting
+### Reason for Atomic Design Pattern
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
->>>>>>> 7874abc (Initialize project using Create React App)
+The main purpose of following the atomic design pattern when organising a React file structure is to isolate the environments of each feature component. When side-effects are isolated, code becomes a lot more readable and modular. A single instance of a feature will make testing more straightforward, thus improving the overall quality assurance of your application.

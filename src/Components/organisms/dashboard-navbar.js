@@ -69,7 +69,7 @@ export const DashboardNavbar = (props) => {
             <Text
               variant="body 2"
               text="Discover whatever you need easily"
-              color="secondary.main"
+              color="#454545"
             />
           </div>
 

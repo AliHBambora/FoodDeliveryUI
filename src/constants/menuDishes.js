@@ -22,14 +22,9 @@ import RedSaucePasta from "../Assets/Images/RedSaucePasta.jpg";
 import SpicyItalianPasta from "../Assets/Images/SpicyItalianPasta.jpg";
 import WhiteCheesePasta from "../Assets/Images/WhiteCheesePasta.jpg";
 import WhiteSaucePasta from "../Assets/Images/WhiteSaucePasta.jpg";
+import { uuidv4 } from "../uuidGenerator/uuidv4";
 
-const uuidv4 = () => {
-  return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, function (c) {
-    var r = (Math.random() * 16) | 0,
-      v = c === "x" ? r : (r & 0x3) | 0x8;
-    return v.toString(16);
-  });
-};
+
 
 export const dishes = {
   Pizzas: [

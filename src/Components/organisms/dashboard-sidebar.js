@@ -21,7 +21,7 @@ const items = [
     title: "Home",
   },
   {
-    href: "/dashboard",
+    href: "/",
     icon: <GridViewIcon fontSize="small" />,
     title: "Dashboard",
   },
@@ -98,7 +98,6 @@ export const DashboardSidebar = (props) => {
             />
           ))}
         </Box>
-        {/* <Divider sx={{ borderColor: "#2D3748", mb: 12 }} /> */}
         <NavItem
           key="Settings"
           icon={<CogIcon fontSize="small" />}

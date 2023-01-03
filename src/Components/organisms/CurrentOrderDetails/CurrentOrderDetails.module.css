@@ -1,12 +1,32 @@
-.MainContainer{
-    background: #F2EEEC;
-    padding:20px;
-    margin-top: 25px;
+.MainContainer {
+  background: #f2eeec;
+  padding: 20px;
+  margin-top: 25px;
 }
 
-.PriceContainer{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 10px;
+.PriceContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.PaymentButton {
+  background: #fc5000;
+  color: #ffffff;
+  text-align: center;
+  width: 100%;
+  padding: 12px;
+  border-radius: 15px;
+  font-size: 17px;
+  font-weight: 700;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+}
+
+.ButtonContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }

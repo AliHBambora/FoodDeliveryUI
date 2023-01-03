@@ -6,7 +6,7 @@ const Image = (props) => {
   const [isLoaded,setIsLoaded] = useState(false);
   return (
     <>
-      {isLoaded?null:<Instagram width={200} height={200}/>}
+      {isLoaded?null:<Instagram width={props.LoaderWidth} height={props.LoaderHeight} backgroundColor="#D3D3D3"/>}
     <img
       key={props.key}
       src={props.source}

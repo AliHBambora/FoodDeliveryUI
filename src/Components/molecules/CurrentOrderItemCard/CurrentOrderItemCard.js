@@ -21,6 +21,8 @@ const CurrentOrderItemCard = ({
           source={ImageSource}
           ObjectFit="cover"
           borderRadius={15}
+          LoaderWidth={130}
+          LoaderHeight={130}
         />
       </div>
       <div className={style.DescriptionContainer}>
