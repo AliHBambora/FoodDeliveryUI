@@ -1,5 +1,5 @@
 const app_constants = {
-    API_URL:"https://dev-be.sulhuf.com:3000/itemsmaster/getall?page=1&itemStatus=Published&resultsPerPage=10",
+    API_URL:"http://localhost:4000/getProducts",
     GET:"GET",
     POST:"POST",
     SUCCESS:"success",

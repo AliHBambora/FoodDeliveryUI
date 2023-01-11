@@ -4,7 +4,7 @@ import app_constants from "../constants/app_constants";
 export class APIRequest {
   static async get(endpoint) {
     const res = await axios({
-      url: "http://localhost:4000/getProducts" + endpoint,
+      url: app_constants.API_URL + endpoint,
       method: app_constants.GET,
     });
     if (res.data.response === app_constants.SUCCESS) {
