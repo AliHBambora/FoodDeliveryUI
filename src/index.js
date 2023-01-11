@@ -7,6 +7,7 @@ import { theme } from "./theme/index";
 import { ThemeProvider } from "@mui/material/styles";
 import { BrowserRouter as Router } from "react-router-dom";
 import { MenuTypeProvider } from "./Context/MenuTypeContext";
+import { ProductsProvider } from "./Context/ProductsContext";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -14,7 +15,9 @@ root.render(
     <ThemeProvider theme={theme}>
       <Router>
         <MenuTypeProvider>
+          <ProductsProvider>
           <App />
+          </ProductsProvider>
         </MenuTypeProvider>
       </Router>
     </ThemeProvider>
