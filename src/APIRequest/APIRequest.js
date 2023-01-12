@@ -8,7 +8,6 @@ export class APIRequest {
       method: app_constants.GET,
     });
     if (res.data.response === app_constants.SUCCESS) {
-      console.log(res.data);
       return { status: app_constants.SUCCESS, data: res.data };
     } else {
       return { status: app_constants.FAILED, Message: res.data.Message };

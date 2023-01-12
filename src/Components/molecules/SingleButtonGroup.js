@@ -35,13 +35,14 @@ const SingleButtonGroup = () => {
       id:uuidv4()
     },
   ]
-  
+
   return (
     <div
       style={{
         display: "flex",
         alignItem: "center",
         justifyContent: "space-between",
+        marginTop:"15px"
       }}
     >
       {menuOptions.map((item)=>(

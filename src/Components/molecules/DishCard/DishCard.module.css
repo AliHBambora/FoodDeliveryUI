@@ -5,8 +5,9 @@
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   border-radius: 10px;
   background-color: #ffffff;
-  height:95%;
+  height: 95%;
 }
+
 
 .ImageContainer {
   border-radius: 10px;
@@ -29,3 +30,26 @@
   align-items: center;
   flex: 0.2;
 }
+
+.ButtonContainer {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.DescriptionButton {
+  background: #fc5000;
+  color: #ffffff;
+  text-align: center;
+  width: 100%;
+  padding: 8px;
+  /* border-radius: 15px; */
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  border: none;
+}
+
+
