@@ -23,6 +23,7 @@
   cursor: pointer;
   display: grid;
   place-items: center;
+  border:none;
 }
 
 .ButtonContainer {

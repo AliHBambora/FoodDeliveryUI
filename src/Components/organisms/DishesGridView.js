@@ -1,4 +1,4 @@
-import { Grid } from "@mui/material";
+import { CircularProgress, Grid } from "@mui/material";
 import React, { useContext } from "react";
 import DishCard from "../molecules/DishCard/DishCard";
 import { dishes } from "../../constants/menuDishes";
@@ -9,7 +9,11 @@ const DishesGridView = () => {
   const { menuType, setMenuType } = useContext(MenuTypeContext);
   const { products, setProducts } = useContext(ProductsContext);
 
-  return (
+  return products?.length == 0 ? (
+    <div style={{ display: "grid", placeItems: "center" }}>
+      <CircularProgress />
+    </div>
+  ) : (
     <Grid
       container
       rowSpacing={2}

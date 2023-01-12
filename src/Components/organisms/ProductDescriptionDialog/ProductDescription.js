@@ -7,9 +7,10 @@ import {
   DialogTitle,
 } from "@mui/material";
 import React, { useContext } from "react";
-import { ProductsContext } from "../../Context/ProductsContext";
-import Image from "../atoms/Image";
-import Text from "../atoms/Text";
+import { ProductsContext } from "../../../Context/ProductsContext";
+import Image from "../../atoms/Image";
+import Text from "../../atoms/Text";
+import style from "./ProductDescription.module.css";
 
 const ProductDescription = ({ Title, Description, ImageSource }) => {
   const { openProductDescDialog, setOpenProductDescDialog } =
@@ -19,7 +20,6 @@ const ProductDescription = ({ Title, Description, ImageSource }) => {
       <Dialog
         open={openProductDescDialog}
         maxWidth="sm"
-        
         // fullWidth={true}
         onClose={(_, reason) => {
           if (reason !== "backdropClick") {
@@ -31,8 +31,8 @@ const ProductDescription = ({ Title, Description, ImageSource }) => {
         <DialogTitle id="scroll-dialog-title">{Title}</DialogTitle>
         <DialogContent dividers={true}>
           <DialogContentText id="scroll-dialog-description" tabIndex={-1} sx={{height:"fit-content"}}>
-            <div style={{ display: "flex" }}>
-              <div style={{flex:0.4,borderRight:"1px solid black"}}>
+            <div className={style.DialogBodyContainer}>
+              <div className={style.DialogImgContainer}>
                 <Image
                   height="100%"
                   width="100%"
@@ -43,7 +43,7 @@ const ProductDescription = ({ Title, Description, ImageSource }) => {
                   LoaderHeight={200}
                 />
               </div>
-              <div style={{flex:0.6,padding:"15px"}}>
+              <div className={style.DialogTextContainer}>
               <Text
                 variant="body 1"
                 text={Description}

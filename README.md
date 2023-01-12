@@ -8,7 +8,9 @@
 
 2.) Once the clone is done , run 'npm install' in the project directory to install all the required dependencies of the project.
 
-3). Run the project using 'npm start'.
+3). Run the React app using 'npm start'.
+
+4). Open another terminal simultaneously and run 'nodemon server' for running the express server.  
 
 ## Project UI
 
@@ -46,3 +48,8 @@ An ecosystem that views different template renders. We can create multiple ecosy
 ### Reason for Atomic Design Pattern
 
 The main purpose of following the atomic design pattern when organising a React file structure is to isolate the environments of each feature component. When side-effects are isolated, code becomes a lot more readable and modular. A single instance of a feature will make testing more straightforward, thus improving the overall quality assurance of your application.
+
+
+### Reason for proxy Express server
+
+The main purpose of creating a proxy Express server is to avoid the CORS cross origin issue and send request to the proxy server which in turn will send a request to the main server and then the response will be relayed back to the UI in the same way.

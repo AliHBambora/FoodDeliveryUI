@@ -1,0 +1,14 @@
+.DialogBodyContainer{
+    display: flex
+}
+
+.DialogImgContainer{
+    flex:0.4;
+    border-right:1px solid grey;
+}
+
+.DialogTextContainer{
+    flex:0.6;
+    padding:15px;
+}
+

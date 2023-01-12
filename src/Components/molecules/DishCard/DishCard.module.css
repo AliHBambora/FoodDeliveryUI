@@ -16,11 +16,13 @@
 
 .Title {
   margin-top: 10px;
+  /* height:10%; */
   flex: 0.2;
 }
 
 .Subtitle {
   margin-top: 5px;
+  /* height:20%; */
   flex: 0.1;
 }
 

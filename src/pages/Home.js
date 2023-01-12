@@ -5,12 +5,12 @@ import RightContainer from "../Components/templates/RightContainer";
 import { APIRequest } from "../APIRequest/APIRequest";
 import app_constants from "../constants/app_constants";
 import { ProductsContext } from "../Context/ProductsContext";
-import ProductDescription from "../Components/organisms/ProductDescription";
+import ProductDescription from "../Components/organisms/ProductDescriptionDialog/ProductDescription";
 import BackdropWithCircularProgress from "../Components/molecules/BackDropWithCircularProgress";
 
 const Home = () => {
-  const { setProducts, product,showLoading,setShowLoading } =
-    useContext(ProductsContext);
+  const { setProducts, product, showLoading } = useContext(ProductsContext);
+
   useEffect(() => {
     APIRequest.get("getProducts").then((res) => {
       if (res.data?.response === app_constants.SUCCESS) {
@@ -18,6 +18,7 @@ const Home = () => {
       }
     });
   }, []);
+
   return (
     <Box
       component="main"
